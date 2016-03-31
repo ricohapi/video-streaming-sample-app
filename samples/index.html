@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Video streaming sample</title>
+    <link rel='stylesheet' href='./samples/styles/style.css'>
+</head>
+
+<body>
+    <div id="loginpage" class="wrapper">
+        <div class="loginform">
+            <h2>Video streaming sample</h2>
+            <p>ID:
+                <br/>
+                <input id="id" type="text" value="" />
+            </p>
+            <p>PASS:
+                <br/>
+                <input id="pass" type="password" value="" />
+            </p>
+            <p>Choose your webcam:</p>
+            <div id="cameras"></div>
+            <div id="loader" class="load-6">
+                <div class="letter-holder">
+                    <div class="l-1 letter">S</div>
+                    <div class="l-2 letter">e</div>
+                    <div class="l-3 letter">a</div>
+                    <div class="l-4 letter">r</div>
+                    <div class="l-5 letter">c</div>
+                    <div class="l-6 letter">h</div>
+                    <div class="l-7 letter">i</div>
+                    <div class="l-8 letter">n</div>
+                    <div class="l-9 letter">g</div>
+                    <div class="l-10 letter">.</div>
+                </div>
+            </div>
+            <div id="camerr" style="display:none">Failed to access the webcam. Make sure to run this demo on an http server and click allow when asked for permission by the browser.</div>
+            <div id="nocamera" style="display:none">No Cameras.</div>
+            <p>Please click `allow` on the top of the screen so we can access your webcam for calls.</p>
+            <button id="login" style="display:none">Login</button>
+            <div id="loader2" style="display:none" class="load-6">
+                <div class="letter-holder">
+                    <div class="l-1 letter">C</div>
+                    <div class="l-2 letter">o</div>
+                    <div class="l-3 letter">n</div>
+                    <div class="l-4 letter">n</div>
+                    <div class="l-5 letter">e</div>
+                    <div class="l-6 letter">c</div>
+                    <div class="l-7 letter">t</div>
+                    <div class="l-8 letter">i</div>
+                    <div class="l-9 letter">n</div>
+                    <div class="l-10 letter">g</div>
+                </div>
+            </div>
+            <div id="loginerr" style="display:none">Login failed.</div>
+        </div>
+    </div>
+    <div id="viewpage" style="display:none" class="wrapper">
+        <div class="wrapleft">
+            <div class="left">
+                <div class="thetamode">
+                    <button id="theta">THETA View Mode</button>
+                </div>
+                <div id="peer-container">
+                    <video id="peer-video" autoplay></video>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            ID:
+            <div id="myid"></div>
+            <button id="logout">Logout</button>
+            <p>Peer-ID:
+                <br/>
+                <input id="peer-id" type="text" value="" />
+            </p>
+            <button id="connect">Connect</button>
+            <div id="loader3" style="display:none" class="load-6">
+                <div class="letter-holder">
+                    <div class="l-1 letter">C</div>
+                    <div class="l-2 letter">o</div>
+                    <div class="l-3 letter">n</div>
+                    <div class="l-4 letter">n</div>
+                    <div class="l-5 letter">e</div>
+                    <div class="l-6 letter">c</div>
+                    <div class="l-7 letter">t</div>
+                    <div class="l-8 letter">i</div>
+                    <div class="l-9 letter">n</div>
+                    <div class="l-10 letter">g</div>
+                </div>
+            </div>
+            <div id="my-container">
+                <video id="my-video" width="200" height="200" autoplay></video>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/strophe.js/1.2.5/strophe.min.js'></script>
+    <script src='../build/bundle.js'></script>
+</body>
+
+</html>
