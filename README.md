@@ -18,7 +18,7 @@ If you don't have them, please register them at [THETA Developers Website](http:
 ## Setup
 
 ```sh
-$ git clone https://github.com/ricohapi/video-streaming-sample-app
+$ git clone https://github.com/ricohapi/video-streaming-sample-app.git
 $ cd video-streaming-sample-app
 $ cp samples/config_template.js samples/config.js
 ```

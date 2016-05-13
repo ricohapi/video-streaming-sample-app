@@ -17,11 +17,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ricohapi/video-streaming-js.git"
+    "url": "git+https://github.com/ricohapi/video-streaming-sample-app.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/ricohapi/video-streaming-js/issues"
+    "url": "https://github.com/ricohapi/video-streaming-sample-app/issues"
   },
-  "homepage": "https://github.com/ricohapi/video-streaming-js"
+  "homepage": "https://github.com/ricohapi/video-streaming-sample-app"
 }
