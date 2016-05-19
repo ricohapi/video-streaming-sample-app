@@ -38,7 +38,7 @@ class UDCStrophe {
   }
 
   connect(userID, userPass) {
-    this._client.setResourceOwnerCreds(userID.split('+')[0], userPass.split('+')[0]);
+    this._client.setResourceOwnerCreds(userID.split('+')[0], userPass);
     this.id = userID;
 
     return new Promise((resolve, reject) => {
