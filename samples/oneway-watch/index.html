@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Video streaming sample</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css' rel='stylesheet' integrity='sha384-0UBL8wxZ28kqJ8w8N8RUV0odBG5w8D/Y+rb+o7hr2F3dS9twlAE8S7VUtVSRe5cc' crossorigin='anonymous'>
+  <link rel='stylesheet' href='./styles/style.css'>
+</head>
+
+<body>
+  <script>
+    window.__oneway = true;
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mithril/0.2.3/mithril.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/strophe.js/1.2.5/strophe.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js'></script>
+  <script src='https://cdn.webrtc-experiment.com:443/rmc3.min.js'></script>
+  <div id='wrapper' class='wrapper'></div>
+  <script src='./config.js'></script>
+  <script src='./build/ricohapi-webrtc.js'></script>
+  <script>
+    if (typeof RicohAPIWebRTC === 'undefined') {
+      console.error('./build/ricohapi-webrtc.js is not found');
+    }
+  </script>
+</body>
+
+</html>

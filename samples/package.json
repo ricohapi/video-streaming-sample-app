@@ -1,18 +1,32 @@
 {
   "name": "ricohapi-video-streaming-sample",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "RICOH API video streaming sample",
-  "main": "index.html",
+  "main": "common/main.js",
   "dependencies": {
-    "ricohapi-auth": "1.0.1"
+    "ricohapi-auth": "1.1.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "webpack-stream": "^3.1.0",
+    "webpack-stream": "^3.2.0",
     "gulp-webserver": "^0.9.1",
     "babel-loader": "^6.2.4",
-    "babel-core": "^6.7.0",
-    "babel-preset-es2015": "^6.6.0"
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "strip-loader": "^0.1.2",
+    "gulp-eslint": "^2.0.0",
+    "eslint": "^2.12.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.1.1",
+    "eslint-plugin-jsx-a11y": "^1.4.2",
+    "eslint-plugin-import": "^1.8.1"
+  },
+  "engines": {
+    "node": ">=5.0.0",
+    "npm": ">=3.0.0"
+  },
+  "scripts": {
+    "build": "gulp build"
   },
   "license": "MIT",
   "repository": {

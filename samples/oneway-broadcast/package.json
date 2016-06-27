@@ -1,0 +1,34 @@
+{
+  "name": "ricohapi-oneway-video-streaming-sample",
+  "version": "1.0.0",
+  "description": "RICOH API headless video streaming sample",
+  "main": "./src/headless.js",
+  "scripts": {
+    "start": "node ./src/headless.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^2.53.2",
+    "xvfb": "^0.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "eslint-plugin-react": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=5.0.0",
+    "npm": ">=3.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricohapi/video-streaming-sample-app.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ricohapi/video-streaming-sample-app/issues"
+  },
+  "homepage": "https://github.com/ricohapi/video-streaming-sample-app"
+}

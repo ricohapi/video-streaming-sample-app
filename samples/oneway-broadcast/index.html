@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Video streaming sample</title>
+</head>
+
+<body>
+  <script src='./src/log-hook.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/strophe.js/1.2.5/strophe.min.js'></script>
+  <script src='https://cdn.webrtc-experiment.com:443/rmc3.min.js'></script>
+  <script src='./config.js'></script>
+  <div id='wrapper'></div>
+  <script src='./build/ricohapi-webrtc.js'></script>
+  <script>
+    if (typeof RicohAPIWebRTC === 'undefined') {
+      console.error('./build/ricohapi-webrtc.js is not found');
+    }
+  </script>
+</body>
+
+</html>
