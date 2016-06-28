@@ -2,7 +2,7 @@
 
 ### Two-way video streaming
 
-* [Video Chat Sample](https://github.com/ricohapi/video-streaming-sample-app/tree/master/samples/towway).
+* [Video Chat Sample](https://github.com/ricohapi/video-streaming-sample-app/tree/master/samples/twoway).
 
 ### One-way video streaming
 
